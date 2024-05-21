@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizzing: border-box;
+  font-family: Arial;
+}
+
+/* Centering the card */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 50, 50, 1) 0%,
+    rgba(38, 100, 60, 1) 35%,
+    rgba(0, 136, 157, 2) 100%
+  );
+}
+
+/* Styling the card */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: yellowgreen;
+  border-radius: 10px;
+
+  text-align: center;
+  width: 250px;
+  height: auto;
+  box-shadow: 15px 25px 40px rgba(0, 0, 0, 0.7);
+}
+
+.title {
+  margin: 2rem 0;
+}
+
+.counter {
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  margin: 4rem;
+}
+
+.refresh {
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+  cursor: pointer;
+}
+
+.buttons {
+  background: gray;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Styling the buttons */
+.buttons button {
+  background-color: #271b1b;
+  padding: 15px;
+  font-size: 2rem;
+  width: 100%;
+  border: none;
+  color: yellowgreen;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  opacity: 0.7;
+}
+
+.buttons button:active {
+  opacity: 0.5;
+}
+
+.refresh:hover {
+  transform: scale(105%);
+}
+
+.refresh:active {
+  transform: rotate(90deg) scale(125%);
+}
+
+/* Media query for mobile responsive*/
+@media screen and (max-width: 600px) {
+  /* Adjust card width for smaller screens */
+  .card {
+    width: 80%;
+  }
+}
